@@ -99,6 +99,55 @@ docker run -p 8501:8501 gdp-dashboard
 
 ---
 
+
+## ❓ **Some Important Questions Needs To Be Addressed:**
+
+### 🔹 **1. What is the purpose of this project in the context of DevOps?**
+> **Answer:** The project automates GDP data visualization using **Streamlit** while integrating **CI/CD pipelines** and **DevContainers** for reproducibility.
+
+### 🔹 **2. How does CI/CD work in your project?**
+> **Answer:** GitHub Actions automates the process:
+> 1. **Triggers on push**
+> 2. **Installs dependencies**
+> 3. **Runs Streamlit app**
+> 4. **Future improvements**: Automated testing & deployment.
+
+### 🔹 **3. Why did you choose Streamlit for this project?**
+> **Answer:** Streamlit is ideal for **data-driven dashboards**, supports **Python**, and integrates well with **DevOps workflows**.
+
+### 🔹 **4. How is DevOps implemented in your project?**
+> **Answer:**
+> - **Infrastructure as Code** via `.devcontainer`
+> - **CI/CD automation** via GitHub Actions
+> - **Reproducible environments** via DevContainers
+
+### 🔹 **5. What is the role of `.devcontainer/devcontainer.json` in your project?**
+> **Answer:** It ensures a **pre-configured development environment** using VS Code DevContainers.
+
+### 🔹 **6. How does caching help in your project?**
+> **Answer:** Streamlit’s `@st.cache_data` improves performance by **reducing redundant file reads**.
+
+### 🔹 **7. What security measures are considered in your project?**
+> **Answer:** Streamlit security settings in `postAttachCommand` disable **CORS & XSRF protection** (can be improved further).
+
+### 🔹 **8. Why did you use GitHub Actions and not Jenkins for CI/CD?**
+> **Answer:** GitHub Actions is **cloud-native**, integrates easily with GitHub, and requires **less setup** than Jenkins.
+
+### 🔹 **9. How can this project be deployed in a production environment?**
+> **Answer:**
+> - **Using Docker:**
+>   1. Create a **Dockerfile**
+>   2. Build & push to **Docker Hub**
+>   3. Deploy using **Kubernetes/AWS/GCP**
+
+### 🔹 **10. What future improvements can be made?**
+> **Answer:**
+> - **Unit tests** in CI/CD pipeline
+> - **Automated deployment to cloud**
+> - **Logging & monitoring with Prometheus**
+
+---
+
 ## 🤝 Contributing
 🚀 Feel free to submit **pull requests** or open **issues**.
 
