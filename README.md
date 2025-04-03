@@ -1,6 +1,6 @@
 # :earth_americas: GDP dashboard template
 
-# Visit our app at https://gdp-nexus.streamlit.app/
+### Visit our app at https://gdp-nexus.streamlit.app/
 
 A simple Streamlit app showing the GDP of different countries in the world.
 
