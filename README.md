@@ -4,6 +4,8 @@
 
 An **interactive GDP visualization dashboard** built using **Streamlit**. The project fetches **GDP data** from the [World Bank Open Data](https://data.worldbank.org/) and allows users to explore GDP trends over time through an intuitive web-based UI.
 
+### Demo - https://gdp-nexus.streamlit.app/
+
 ## 🚀 Features
 - 📊 **Interactive visualization** of GDP data using **line charts**.
 - 🎯 **Filter data** by country and time range.
